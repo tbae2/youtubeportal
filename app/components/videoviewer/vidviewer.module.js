@@ -1,9 +1,6 @@
 (function(){
-angular.module('youtubeportal')
-      .controller('vidViewer',vidViewer);
 
-      vidViewer.$inject = ["$scope"];
-      function vidViewer() {
+    'use strict';
+angular.module('youtubeportal.vidviewer',[]);
 
-    };
-});
+})();

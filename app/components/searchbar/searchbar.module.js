@@ -1,11 +1,4 @@
 (function(){
-angular.module('youtubeportal')
-    .controller('searchBar',searchBar);
+angular.module('youtubeportal.searchbar',[]);
 
-    searchBar.$inject = ["$scope"];
-
-    function searchBar(){
-
-  };
-
-});
+})();

@@ -4,7 +4,7 @@
   angular.module('youtubeportal.searchbar')
     .controller('searchBar',searchBar);
 
-  searchBar.$inject = ["$scope"];
+  searchBar.$inject = ["$scope","$searchYoutube"];
 
 function searchBar($scope){
 

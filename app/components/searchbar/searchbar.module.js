@@ -1,4 +1,4 @@
 (function(){
-angular.module('youtubeportal.searchbar',[]);
+angular.module('searchbar',[]);
 
 })();

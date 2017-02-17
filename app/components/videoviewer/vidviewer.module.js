@@ -1,6 +1,6 @@
 (function(){
 
     'use strict';
-angular.module('youtubeportal.vidviewer',[]);
+angular.module('vidviewer',[]);
 
 })();

@@ -5,8 +5,6 @@
     .component('searchInputbar',{
         templateUrl: '/app/components/searchbar/searchbar.html',
         controller: 'searchBar'
-
-
     })
 
 })();

@@ -1,7 +1,9 @@
 (function() {
 
   angular.module('youtubeportal',
-  ['youtubeportal.playlist','youtubeportal.searchbar','youtubeportal.vidviewer']);
+  ['playlist',
+  'searchbar',
+  'vidviewer']);
 })();
 
 

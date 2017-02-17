@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('youtubeportal.vidviewer')
+  angular.module('vidviewer')
     .controller('vidviewer',vidViewer);
 
     vidViewer.$inject = ["$scope"];

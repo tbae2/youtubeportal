@@ -1,19 +1,24 @@
-(function(){
-  'use strict';
+(function() {
+    'use strict';
 
-  angular.module('searchbar')
-    .controller('searchBar',searchBar);
+    angular.module('searchbar').controller('searchBar', searchBar);
 
-  searchBar.$inject = ["$scope"];
+    function searchBar(searchYoutube) {
+        this.hello = "hello world from controller for component";
+        this.inputcontent;
+        this.count = 0;
+        this.testService = '';
+        this.foundVideo;
+        this.charcount = function() {
 
-function searchBar($scope, searchYoutube,inputcontent){
-    this.hello = "hello world from controller for component";
-    this.inputcontent = inputcontent;
+            this.count = this.inputcontent.length;
+            //console.log(this.count);
+            this.foundVideo = searchYoutube.findVideo(this.inputcontent).then(function(response) {
+                return response.data.items;
 
-      console.log(this.inputcontent);
+            });
+        }
+        console.log(this.foundVideo);
 
-}
-
-
-
+    }
 })();

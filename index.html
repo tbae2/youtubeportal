@@ -3,8 +3,8 @@
 <head></head>
 <title>Youtube Portal</title>
 <body >
-  <div>
-    <search-inputbar></search-inputbar>
+  <div ng-controller="searchBar as sbar">
+    <search-inputbar count="sbar.count"></search-inputbar>
   </div>
 
 

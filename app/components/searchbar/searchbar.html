@@ -3,7 +3,7 @@
     <div class="input-group">
       <input type="text" class="form-control" placeholder="Search for..." ng-model="$ctrl.inputcontent"/>
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
+        <button class="btn btn-default" type="button" ng-click="$ctrl.charcount();">Go!</button>
       </span>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
@@ -11,4 +11,8 @@
   <p>Hello world</p>
   <p>{{$ctrl.hello}}</p>
   <p>{{$ctrl.inputcontent}}</p>
+  <p>{{$ctrl.count}}</p>
+  <ul>
+    <li ng-repeat="found in $ctrl.foundVideo">{{found.snippet.title}}</li>
+  </ul>
 </div>

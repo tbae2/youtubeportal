@@ -1,7 +1,7 @@
 (function() {
 
   angular.module('youtubeportal',
-  ['playlist',
+  ['ui.bootstrap','playlist',
   'searchbar',
   'vidviewer']);
 })();

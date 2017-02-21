@@ -6,7 +6,7 @@
             var searchYt = {};
             var baseUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=';
             var videoQuery = '';
-            var apiKey = '';
+            var apiKey = '&key=AIzaSyAYzBUsoyit6PKN0XCpQLg0RcYSs9seE_A';
             var apiCallUrl = '';
 
             // var apiUrl = function(){

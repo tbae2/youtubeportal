@@ -22,7 +22,7 @@
                     method: 'GET',
                     url: apiCallurl
                   }).then(function(response){
-                    console.log(response);
+                    // console.log(response);
                       return response;
                   })
 

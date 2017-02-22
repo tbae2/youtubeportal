@@ -1,10 +1,18 @@
 <div>
   <div class="col-lg-6">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for..." ng-model="$ctrl.inputcontent"/>
+      <!-- <input type="text" class="form-control" placeholder="Search for..." ng-model="$ctrl.inputcontent"/>
       <span class="input-group-btn">
         <button class="btn btn-default" type="button" ng-click="$ctrl.charcount();">Go!</button>
-      </span>
+      </span> -->
+    <!-- ng-model binds to the controller inputcontent property, also handles selection, $viewValue built in ng to capture what is input   -->
+<input type="text" ng-model="$ctrl.inputcontent" placeholder="search yt"
+uib-typeahead="video.snippet.title for video in $ctrl.charcount($viewValue)"
+typeahead-loading="loadingLocations" typeahead-no-results="noResults" class="form-control">
+<i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+<div ng-show="noResults">
+  <i class="glyphicon glyphicon-remove"></i> No Results Found
+</div>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->

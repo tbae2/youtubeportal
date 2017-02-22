@@ -12,13 +12,13 @@
         syt.foundVideo;
         this.charcount = function() {
 
-            this.count = this.inputcontent.length;
+            //this.count = this.inputcontent.length;
             //console.log(this.count);
-            searchYoutube.findVideo(this.inputcontent)
+          return searchYoutube.findVideo(syt.inputcontent)
                                       .then(function(response) {
                                       console.log(response.data.items);
-                                        syt.foundVideo = response.data.items;
-
+                                        // syt.foundVideo = response.data.items;
+                                        return response.data.items;
                                      });
         }
 

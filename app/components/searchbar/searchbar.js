@@ -6,9 +6,10 @@
     function searchBar(searchYoutube) {
         var syt = this;
         syt.hello = "hello world from controller for component";
-        syt.inputcontent;
+        syt.inputcontent = '';
         syt.count = 0;
         //this.testService = '';
+        console.log(syt.inputcontent);
         syt.foundVideo;
         this.charcount = function() {
 
@@ -17,7 +18,7 @@
           return searchYoutube.findVideo(syt.inputcontent)
                                       .then(function(response) {
                                       console.log(response.data.items);
-                                        // syt.foundVideo = response.data.items;
+                                        syt.foundVideo = response.data.items;
                                         return response.data.items;
                                      });
         }

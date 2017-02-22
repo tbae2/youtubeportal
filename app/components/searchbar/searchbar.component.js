@@ -4,7 +4,7 @@
 
     .component('searchInputbar',{
         bindings: {
-            count: '='
+            search: '='
         },
         templateUrl: '/app/components/searchbar/searchbar.html',
         controller: 'searchBar'
